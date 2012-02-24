@@ -3,26 +3,9 @@
 
 # Licence
 #
-# Setup Fixer is a collection of utilities for easy configuration of setuptools
-# Copyright (c) 2009-2012 Flight Data Services Ltd
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.
+# SetupFixer is a collection of utilities for easy configuration of setuptools
+# Copyright (c) 2012 Flight Data Services Ltd
+# http://www.flightdatacommunity.com
 
 try:
     from setuptools import setup, find_packages
@@ -36,30 +19,37 @@ from setupfixer import __version__ as VERSION
 setup(
     name='SetupFixer',
     version=VERSION,
-    url='',
     author='Flight Data Services Ltd',
     author_email='developers@flightdataservices.com',
     description='Setup Fixer is a collection of utilities for easy configuration of setuptools.',
     long_description=open('README').read() + open('CHANGES').read(),
-    download_url='',
-    license='MIT',
-
-    packages=find_packages(),
+    license='Open Software License (OSL-3.0)',
+    url='http://www.filterpype.org/',
+    download_url='http://www.filterpype.org/',    
+    packages=find_packages(exclude=['distribute_setup', 'tests', 'lextab.*', \
+    'parsetab.*']),
+    # The 'include_package_data' keyword tells setuptools to install any 
+    # data files it finds specified in the MANIFEST.in file.    
     include_package_data=True,
-
+    zip_safe=False,
     install_requires=[],
-    setup_requires=[],
+    setup_requires=['nose'],
     tests_require=[],
-    extras_require={},
+    extras_require={
+        'jenkins': ['clonedigger', 'nosexcover', 'pep8', 'pyflakes', 'pylint'],
+        'sphinx': ['sphinx', 'sphinx-pypi-upload'],
+    },
     dependency_links=[],
     test_suite='nose.collector',
-
-    zip_safe=False,
+    platforms=[
+        'OS Independent',
+    ],        
+    keywords=['setuptools', 'pip', 'requirements'],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Open Software License (OSL-3.0)",        
         "Programming Language :: Python :: 2.5",
         "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
