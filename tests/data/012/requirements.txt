@@ -1,0 +1,1 @@
+-e http://git.example.net/package/package.git#egg=package

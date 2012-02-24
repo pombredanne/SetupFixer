@@ -1,0 +1,15 @@
+.. contents:: **Table of Contents**
+
+Introduction
+============
+
+SetupFixer is a utility to help simplify the configuration of `setup.py` in
+your package.  It provides the following utilities:
+
+* A requirements file parser for extracting names of required packages.
+
+Package requires **pip** for installation.
+
+| pip install setupfixer
+
+Project sponsored by Flight Data Services Ltd: http://www.flightdataservices.com/

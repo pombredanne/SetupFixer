@@ -1,0 +1,2 @@
+-f http://www.example.net/package/package-0.0.1.zip
+package==0.0.1

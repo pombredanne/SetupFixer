@@ -1,0 +1,2 @@
+random [abc]
+random [xyz]

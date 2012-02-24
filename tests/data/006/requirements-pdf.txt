@@ -1,0 +1,2 @@
+PIL
+reportlab==2.5
