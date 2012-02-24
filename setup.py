@@ -35,10 +35,7 @@ setup(
     install_requires=[],
     setup_requires=['nose'],
     tests_require=[],
-    extras_require={
-        'jenkins': ['clonedigger', 'nosexcover', 'pep8', 'pyflakes', 'pylint'],
-        'sphinx': ['sphinx', 'sphinx-pypi-upload'],
-    },
+    extras_require={},
     dependency_links=[],
     test_suite='nose.collector',
     platforms=[
