@@ -22,7 +22,7 @@ setup(
     author='Flight Data Services Ltd',
     author_email='developers@flightdataservices.com',
     description='Setup Fixer is a collection of utilities for easy configuration of setuptools.',
-    long_description=open('README').read() + open('CHANGES').read(),
+    long_description=open('README').read()+open('CHANGES').read()+open('TODO').read(),
     license='Open Software License (OSL-3.0)',
     url='http://www.filterpype.org/',
     download_url='http://www.filterpype.org/',    
