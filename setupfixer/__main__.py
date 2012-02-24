@@ -54,7 +54,7 @@ def upgrade_requirements_parser(src_file, dst_file):
     '''
     if os.path.isfile(dst_file):
         copy(src_file, dst_file)
-        message = '[+] Upgraded requirements parser in current directory.'
+        message = '[>] Upgraded requirements parser in current directory.'
     else:
         message = '[!] Requirements parser is not installed.'
     print >>sys.stderr, message
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         display_help_message()
     elif '--install' in sys.argv[1:] or '-i' in sys.argv[1:]:
         install_requirements_parser(src_file, dst_file)
-    elif '--upgraded' in sys.argv[1:] or '-u' in sys.argv[1:]:
+    elif '--upgrade' in sys.argv[1:] or '-u' in sys.argv[1:]:
         upgrade_requirements_parser(src_file, dst_file)
     else:
         display_help_message()
