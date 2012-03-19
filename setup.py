@@ -26,8 +26,7 @@ setup(
     license='Open Software License (OSL-3.0)',
     url='http://www.filterpype.org/',
     download_url='http://www.filterpype.org/',    
-    packages=find_packages(exclude=['distribute_setup', 'requirements', \
-    'tests']),
+    packages=find_packages(exclude=("tests",)),
     # The 'include_package_data' keyword tells setuptools to install any 
     # data files it finds specified in the MANIFEST.in file.    
     include_package_data=True,
