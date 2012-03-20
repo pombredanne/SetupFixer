@@ -1,8 +1,9 @@
 TODO
-=====
+====
 
 * Handle version numbers for ``--editable``/``-e`` lines in requirement files.
 * Handle extraction and merging of multiple version constraints.
 * Auto-versioning of releases
 
 See the **TODO** markers in ``setupfixer/*.py`` for a complete list.
+

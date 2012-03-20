@@ -12,7 +12,7 @@ except ImportError:
     from setuptools import setup, find_packages
 
 import setupfixer as pkg
-from requirements import RequirementsParser
+from setupfixer.requirements import RequirementsParser
 requirements = RequirementsParser()
 
 setup(
@@ -24,7 +24,7 @@ setup(
     maintainer_email=pkg.__maintainer_email__,
     url=pkg.__url__,
     description=pkg.__description__,
-    long_description=open('README').read() + open('CHANGES').read(),
+    long_description=open('README').read() + open('CHANGES').read() + open('TODO').read(),
     download_url=pkg.__download_url__,
     classifiers=pkg.__classifiers__,
     platforms=pkg.__platforms__,
