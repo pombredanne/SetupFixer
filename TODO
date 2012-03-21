@@ -1,5 +1,5 @@
-TODO
-====
+To Do
+=====
 
 * Handle version numbers for ``--editable``/``-e`` lines in requirement files.
 * Handle extraction and merging of multiple version constraints.

@@ -11,8 +11,7 @@ __author_email__ = 'developers@flightdataservices.com'
 __maintainer__ = 'Flight Data Services Ltd'
 __maintainer_email__ = 'developers@flightdataservices.com'
 __url__ = 'http://www.flightdataservices.com/'
-__description__ ='A collection of utilities for easy configuration of \
-setuptools.'
+__description__ ='Automatically adds packages from pip requirements to setup.py.'
 __download_url__ = ''
 __classifiers__ = [
     'Development Status :: 5 - Production/Stable',
