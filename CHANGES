@@ -1,6 +1,11 @@
 Changes
 =======
 
+0.1.1
+-----
+
+* Fix for incorrect extraction of extras and operating system names. 
+
 0.1.0
 -----
 
