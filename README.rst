@@ -6,7 +6,8 @@ provides the following utilities:
 
 * A ``pip`` requirements file parser for extracting names of required packages.
 
-Project sponsored by `Flight Data Services`_.
+Project sponsored by `Flight Data Services`_ and released under the Open 
+Software License (OSL-3.0).
 
 Installation
 ------------
