@@ -211,6 +211,20 @@ class TestRequirementsParser(unittest.TestCase):
             'http://git.example.net/package/package.git#egg=package',
         ])
 
+    def test_requirements__path_with_extra_hyphens(self):
+        '''
+        Check extraction of extras name and operating system name.
+        '''
+        path = os.path.join(self.base_path, 'data/013/a-b-c')
+        requirements = RequirementsParser(path=path)
+        self.assertEquals(requirements.install_requires, [
+            'h5py==2.0.0', 'numpy', 'scipy',
+        ])
+        self.assertEquals(requirements.setup_requires, [])
+        self.assertEquals(requirements.tests_require, [])
+        self.assertEquals(requirements.extras_require, {})
+        self.assertEquals(requirements.dependency_links, [])
+
 
 ################################################################################
 # vim:et:ft=python:nowrap:sts=4:sw=4:ts=4
