@@ -3,17 +3,17 @@
 Tutorial
 ========
 
-Here is a short tutorial explaing how to install and use SetupFixer.
+This is a short tutorial explaining how to install and use SetupFixer.
 
 Understanding requirements files
 ================================
 
-The ``pip`` requirements file format files is documented on the pip website.
+The ``pip`` requirements file format is documented on the *pip* website.
 
 * http://www.pip-installer.org/en/latest/requirements.html
 
 SetupFixer honours this format, including version numbers and packages in the
-"editable form".
+*"editable form"*.
 
 Using the ``RequirementParser``
 ===============================
