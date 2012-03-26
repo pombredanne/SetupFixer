@@ -18,9 +18,9 @@ automatically combined from all requirements files found.
 Basic example usage for ``requirements*.txt`` in the same directory:
 
     from requirements import RequirementsParser
-
+    
     requirements = RequirementsParser()
-
+    
     setup(
         ...
         install_requires=requirements.install_requires,
