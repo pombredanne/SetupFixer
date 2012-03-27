@@ -41,6 +41,11 @@ help:
 clean:
 	-rm -rf $(BUILDDIR)/*
 
+pdf:
+	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
+	@echo
+	@echo "Build finished. The PDF files are in $(BUILDDIR)/pdf."
+
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
@@ -150,4 +155,4 @@ linkcheck:
 doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
-	      "results in $(BUILDDIR)/doctest/output.txt."
+	      "results in $(BUILDDIR)/doctest/output.txt."	      

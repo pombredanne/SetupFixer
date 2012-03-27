@@ -1,7 +1,7 @@
 SetupFixer |release|
 ====================
 
-Contents:
+.. _Contents:
 
 .. toctree::
    :maxdepth: 2

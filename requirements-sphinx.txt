@@ -1,2 +1,3 @@
 sphinx
 sphinx-pypi-upload
+rst2pdf
