@@ -5,6 +5,7 @@ Changes
 -----
 
 * Fix for incorrect extraction of extras and operating system names. 
+* Added ``early_install()``
 * Added documentation.
 
 0.1.0

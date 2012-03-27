@@ -69,6 +69,7 @@ import os
 import platform
 import re
 import subprocess
+import sys
 
 from collections import defaultdict
 from glob import glob
@@ -421,14 +422,15 @@ class RequirementsParser(object):
             dependency_links += data.get('e', [])
         return sorted(list(set(dependency_links)))
 
-    def early_install(self):
+    def early_install(self, path=''):
         '''
         Installs the packages listed in requirements_early.txt        
         '''        
-        filename = _build_filename(path, '%s.%s', 'requirements_early', 'txt')                
+        filename = _build_filename(path, '%s.%s', 'requirements_early', 'txt')
         if os.path.isfile(filename):
             try:
-                retcode = subprocess.call('pip install --upgrade --requirement ' + filename)
+                retcode = subprocess.call('pip install --upgrade --requirement ' \
+                + filename, shell=True)
                 if retcode:
                     print >>sys.stderr, 'Failed to install requirements_early.txt'
                     sys.exit(retcode)                
