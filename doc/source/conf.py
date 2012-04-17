@@ -17,7 +17,7 @@ import setupfixer as pkg
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('../'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -214,8 +214,8 @@ latex_logo = 'fds-icon.png'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'setupfixer', u'SetupFixer Documentation',
-     [u'Flight Data Services Ltd'], 1)
+    ('index', pkg.__packagename__.lower(), pkg.__packagename__ + ' Documentation',
+     [pkg.__author__], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -242,6 +242,7 @@ texinfo_documents = [
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
 
+todo_include_todos = True
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
@@ -267,7 +268,7 @@ pdf_documents = [
 ]
 
 # A comma-separated list of custom stylesheets. Example:
-pdf_stylesheets = ['default', 'sphinx', 'a4']
+pdf_stylesheets = ['tenpoint', 'autumn', 'a4']
 
 # A list of folders to search for stylesheets. Example:
 pdf_style_path = ['.', '_styles']
@@ -275,17 +276,17 @@ pdf_style_path = ['.', '_styles']
 # Create a compressed PDF
 # Use True/False or 1/0
 # Example: compressed=True
-pdf_compressed = True
+#pdf_compressed = False
 
 # A colon-separated list of folders to search for fonts. Example:
 # pdf_font_path = ['/usr/share/fonts', '/usr/share/texmf-dist/fonts/']
 
 # Language to be used for hyphenation support
-#pdf_language = "en_US"
+pdf_language = "en_GB"
 
 # Mode for literal blocks wider than the frame. Can be
 # overflow, shrink or truncate
-#pdf_fit_mode = "shrink"
+pdf_fit_mode = "shrink"
 
 # Section level that forces a break page.
 # For example: 1 means top-level sections start in a new page
@@ -336,7 +337,7 @@ pdf_cover_template = 'sphinxcover.tmpl'
 #pdf_use_toc = True
 
 # How many levels deep should the table of contents be?
-pdf_toc_depth = 9999
+pdf_toc_depth = 3
 
 # Add section number to section references
 pdf_use_numbered_links = False
