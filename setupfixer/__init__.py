@@ -11,7 +11,7 @@ __author_email__ = 'developers@flightdataservices.com'
 __maintainer__ = 'Flight Data Services Ltd'
 __maintainer_email__ = 'developers@flightdataservices.com'
 __url__ = 'http://www.flightdataservices.com/'
-__description__ ='Automatically adds packages from pip requirements to setup.py.'
+__description__ = 'Automatically adds packages from pip requirements to setup.py.'
 __download_url__ = ''
 __classifiers__ = [
     'Development Status :: 5 - Production/Stable',
@@ -26,7 +26,7 @@ __classifiers__ = [
     ]
 __platforms__ = ['OS Independent']
 __license__ = 'Open Software License (OSL-3.0)'
-__keywords__ = ['setuptools', 'easy_install', 'distribute', 'pip', 
+__keywords__ = ['setuptools', 'easy_install', 'distribute', 'pip',
                 'requirements']
 
 ################################################################################

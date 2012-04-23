@@ -66,7 +66,6 @@ def upgrade_requirements_parser(src_file, dst_file):
 
 if __name__ == '__main__':
 
-
     src_path = os.path.realpath(os.path.dirname(__file__))
     src_file = os.path.join(src_path, 'requirements.py')
     dst_path = os.path.realpath('.')
