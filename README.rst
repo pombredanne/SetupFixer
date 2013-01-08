@@ -43,3 +43,6 @@ Documentation is available from the `Python Package Index`_:
 .. _Python Package Index: http://pypi.python.org/
 .. _Christoph Burgmer: http://cburgmer.posterous.com
 
+.. image:: https://cruel-carlota.pagodabox.com/89a20eeed52e2e9a47a82fd8f26bf367
+    :alt: githalytics.com
+    :target: http://githalytics.com/FlightDataServices/SetupFixer
