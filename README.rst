@@ -1,16 +1,16 @@
 Introduction
 ============
 
-SetupFixer is a utility to help simplify the configuration of ``setup.py``. It 
+SetupFixer is a utility to help simplify the configuration of ``setup.py``. It
 provides the following utilities:
 
 * A ``pip`` requirements file parser for extracting names of required packages.
 
-Project sponsored by `Flight Data Services`_ and released under the Open 
+Project sponsored by `Flight Data Services`_ and released under the Open
 Software License (`OSL-3.0`_).
 
-SetupFixer is inspired by `Christoph Burgmer`_'s approach to integrating 
-``requirements.txt`` and ``setup.py`` but extends upon it and supports 
+SetupFixer is inspired by `Christoph Burgmer`_'s approach to integrating
+``requirements.txt`` and ``setup.py`` but extends upon it and supports
 versioning information.
 
 * http://cburgmer.posterous.com/pip-requirementstxt-and-setuppy
@@ -28,7 +28,7 @@ Source Code
 
 Source code is available from `GitHub`_:
 
-* https://github.com/organizations/FlightDataServices/SetupFixer
+* https://github.com/FlightDataServices/SetupFixer
 
 Documentation
 -------------
