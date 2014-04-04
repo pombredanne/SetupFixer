@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4
+
 # Copyright (c) Flight Data Services Ltd
 # http://www.flightdataservices.com
 # See the file "LICENSE" for the full license governing this code.
@@ -23,11 +25,8 @@ __classifiers__ = [
     'Programming Language :: Python :: Implementation :: CPython',
     'Operating System :: OS Independent',
     'Topic :: Software Development',
-    ]
+]
 __platforms__ = ['OS Independent']
 __license__ = 'Open Software License (OSL-3.0)'
 __keywords__ = ['setuptools', 'easy_install', 'distribute', 'pip',
                 'requirements']
-
-################################################################################
-# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4

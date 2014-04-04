@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.abspath('../'))
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.autosummary',
-              'sphinx.ext.coverage',              
+              'sphinx.ext.coverage',
               'sphinx.ext.doctest',
               'sphinx.ext.intersphinx',
               'sphinx.ext.pngmath',
@@ -179,21 +179,21 @@ htmlhelp_basename = pkg.__packagename__ + 'doc'
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-'papersize': 'a4paper',
+    # The paper size ('letterpaper' or 'a4paper').
+    'papersize': 'a4paper',
 
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    # The font size ('10pt', '11pt' or '12pt').
+    #'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+    # Additional stuff for the LaTeX preamble.
+    #'preamble': '',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', pkg.__packagename__ + '.tex', pkg.__packagename__ + ' Documentation',
-   pkg.__author__, 'manual'),
+    ('index', pkg.__packagename__ + '.tex', pkg.__packagename__ + ' Documentation',
+     pkg.__author__, 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -236,9 +236,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', pkg.__packagename__, pkg.__packagename__ + ' Documentation',
-   pkg.__author__, pkg.__packagename__, pkg.__description__,
-   'Miscellaneous'),
+    ('index', pkg.__packagename__, pkg.__packagename__ + ' Documentation',
+     pkg.__author__, pkg.__packagename__, pkg.__description__,
+     'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

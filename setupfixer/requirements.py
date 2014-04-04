@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4
 ################################################################################
 # Requirements File Parser for Setup Tools
 ################################################################################
@@ -68,8 +69,6 @@ See more information about requirements files and integration with setup.py:
 import os
 import platform
 import re
-import subprocess
-import sys
 
 from collections import defaultdict
 from glob import glob
@@ -421,7 +420,3 @@ class RequirementsParser(object):
             dependency_links += data.get('f', [])
             dependency_links += data.get('e', [])
         return sorted(list(set(dependency_links)))
-
-
-################################################################################
-# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4
