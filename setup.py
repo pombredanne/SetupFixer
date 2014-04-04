@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4
+
 # Copyright (c) Flight Data Services Ltd
 # http://www.flightdataservices.com
 # See the file "LICENSE" for the full license governing this code.
@@ -41,6 +43,3 @@ setup(
     dependency_links=requirements.dependency_links,
     test_suite='nose.collector',
 )
-
-################################################################################
-# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4

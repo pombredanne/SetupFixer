@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
-################################################################################
+# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4
+##############################################################################
 # Requirements File Parser Tests
-################################################################################
+##############################################################################
 
 '''
 Test suite for the requirements file parser.
 '''
 
-################################################################################
+##############################################################################
 # Imports
 
 
@@ -22,7 +23,7 @@ except ImportError:
 from setupfixer.requirements import RequirementsParser
 
 
-################################################################################
+##############################################################################
 # Test Cases
 
 
@@ -224,7 +225,3 @@ class TestRequirementsParser(unittest.TestCase):
         self.assertEquals(requirements.tests_require, [])
         self.assertEquals(requirements.extras_require, {})
         self.assertEquals(requirements.dependency_links, [])
-
-
-################################################################################
-# vim:et:ft=python:nowrap:sts=4:sw=4:ts=4
