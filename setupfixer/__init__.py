@@ -28,5 +28,4 @@ __classifiers__ = [
 ]
 __platforms__ = ['OS Independent']
 __license__ = 'Open Software License (OSL-3.0)'
-__keywords__ = ['setuptools', 'easy_install', 'distribute', 'pip',
-                'requirements']
+__keywords__ = ['setuptools', 'easy_install', 'pip', 'requirements']

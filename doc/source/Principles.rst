@@ -6,10 +6,6 @@ Principles
 `pip`_ is a tool for installing and managing Python packages, such as those 
 found in the Python Package Index. It's a replacement for ``easy_install``.
 
-`Distribute`_ is a fork of the *Setuptools* project. *Distribute* is intended to 
-replace *Setuptools* as the standard method for working with Python module 
-distributions.
-
 ``pip`` has a feature where package dependencies can be described in a simple 
 text file called ``requirements.txt``. The packages dependencies described in a 
 *requirements* file can be installed from just about anywhere, including a 
@@ -48,5 +44,4 @@ it finds. All package dependency management is now maintained in a few easy to
 read text files that act as the single source for package dependency tracking.
 
 .. _pip: http://pypi.python.org/pypi/pip
-.. _Distribute: http://pypi.python.org/pypi/distribute
 .. _Flight Data Services: http://www.flightdataservices.com/
